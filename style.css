@@ -1,0 +1,62 @@
+body {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Gradient */
+        url('/images/clgbgimage.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+    color: white; /* Text color for visibility */
+}
+
+.heading {
+    text-align: center; /* Center text within the div */
+    font-size: 3rem; /* Adjust font size */
+    padding: 20px; /* Add some padding */
+    /* background: rgba(0, 0, 0, 0.7); */
+     /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    font-weight: bold; /* Make the font bold */
+}
+
+.navbar {
+    margin-top: 20px; /* Space between heading and navbar */
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove padding */
+    display: flex; /* Use Flexbox for horizontal layout */
+    justify-content: flex-end; /* Center items */
+}
+
+.navbar li {
+    position: relative; /* Positioning for the circle */
+    margin: 0 15px; /* Space between menu items */
+}
+
+.navbar li:before {
+    content: ""; /* Create a circle */
+    width: 10px; /* Circle size */
+    height: 10px; /* Circle size */
+    border-radius: 50%; /* Make it circular */
+    background-color: white; /* Circle color */
+    position: absolute; /* Position it */
+    left: -15px; /* Adjust position */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for centering */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Font size */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.navbar a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
