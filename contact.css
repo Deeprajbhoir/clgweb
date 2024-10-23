@@ -6,6 +6,19 @@ body {
     box-sizing: border-box;
 }
 
+
+body {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Gradient */
+        url('/images/contactus.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+    color: white; /* Text color for visibility */
+}
+
 header {
     text-align: center;
     padding: 20px;
@@ -25,21 +38,77 @@ h1 {
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: -10px;
+    margin: 10px;
 }
 
 .col {
     padding: 10px;
     flex: 1;
     min-width: 250px;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+
+}
+
+.col:hover{
+    border: #4CAF50;
 }
 
 /* Form section, contact info, and map styling */
 .form-section, .info, .map {
-    padding: 15px;
-    background-color: #f9f9f9;
+    padding: 20px;
+    background-color: transparent;
     border: 1px solid #ddd;
     border-radius: 8px;
+}
+
+.form-section:hover, .info:hover, .map:hover {
+    border: 4px solid #423c3cdd;
+}
+
+input,textarea{
+    border: 3px black solid;
+    background-color: transparent;
+}
+
+
+
+/*navbar*/
+
+/* Navbar Styling */
+.navbar {
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    background: rgba(0, 0, 0, 0.8); 
+    padding: 10px 0; 
+    z-index: 100; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px; 
+}
+
+.navbar a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 1rem; 
+    transition: color 0.3s; 
+}
+
+.navbar a:hover {
+    color: #ffcc00; 
 }
 
 /* Responsive design */

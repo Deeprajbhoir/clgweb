@@ -1,0 +1,134 @@
+
+/* Navbar Styling */
+.navbar {
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    background: rgba(0, 0, 0, 0.8); 
+    padding: 10px 0; 
+    z-index: 100; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px; 
+}
+
+.navbar a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 1rem; 
+    transition: color 0.3s; 
+}
+
+.navbar a:hover {
+    color: #ffcc00; 
+}
+
+
+
+* {
+    margin-top: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.staff-card {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.staff-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.staff-photo {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #2196f3;
+}
+
+.staff-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.staff-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.staff-designation,
+.staff-qualification,
+.staff-experience {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+
+/* #c6{
+    display: none;
+}
+
+#c6:hover{
+    display: block;
+} */
+
+
+.staff-card a {
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Ensure text color is inherited from parent */
+    display: block; /* Make link cover the entire card */
+    height: 100%; /* Ensure it takes full height */
+}
+
+.staff-card {
+    position: relative; /* Ensure absolute positioning is relative to this card */
+    cursor: pointer; /* Change cursor to pointer to indicate clickable area */
+}
+
+.tap-to-view {
+    display: none; /* Hide the text by default */
+    font-weight: bold; /* Make it stand out, optional */
+}
+
+.staff-card:hover .tap-to-view {
+    display: block; /* Show text when card is hovered */
+    position: absolute; /* Position it absolutely for better layout */
+    bottom: 10px; /* Adjust position as needed */
+    left: 10px; /* Adjust position as needed */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional background for better visibility */
+    padding: 5px; /* Optional padding */
+    border-radius: 5px; /* Optional rounding */
+    z-index: 10; /* Ensure it appears above other elements */
+}

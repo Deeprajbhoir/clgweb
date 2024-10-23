@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4a90e2; /* Change to a brighter blue */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    margin-bottom: 20px;
+}
+
+.about-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 4px solid #4a90e2; /* Sidebar color */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.about-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.about-item h2 {
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Navbar Styling */
+.navbar {
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    background: rgba(0, 0, 0, 0.8); 
+    padding: 10px 0; 
+    z-index: 100; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px; 
+}
+
+.navbar a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 1rem; 
+    transition: color 0.3s; 
+}
+
+.navbar a:hover {
+    color: #ffcc00; 
+}
+
+
+
+.button-container {
+    text-align: center; /* Center the button */
+    margin: 30px 0; /* Add some space above and below the button */
+}
+
+.btn {
+    height: 80px;
+    width: 530px;
+    display: inline-block;
+    background-color: #4a90e2; /* Button color */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 3rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #357abd; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
